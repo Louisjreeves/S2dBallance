@@ -15,7 +15,7 @@ $mydownloads = (New-Object -ComObject Shell.Application).NameSpace('shell:Downlo
 
 $MyTemp =(Get-Item $mydownloads).fullname
 
-$myuser= $env:USERNAME
+$myuser=  $env:USERDOMAIN\$env:USERNAME
 
 
  
